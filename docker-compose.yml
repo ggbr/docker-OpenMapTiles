@@ -1,0 +1,10 @@
+version: '2.1'
+services:
+  omt:
+    image: klokantech/openmaptiles-server
+    volumes:
+      - "./data:/data"
+
+    ports:
+      -  5400:80
+    restart: always
